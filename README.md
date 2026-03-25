@@ -1,11 +1,51 @@
 # Operating-System_project
-A simulator designed to check file system consistency. It analyzes metadata to verify file and directory structure. Detects errors like lost files and cross-linked blocks. Identifies incorrect directory entries and inconsistencies. Helps ensure data integrity and reliable file system operation.
-This project is about creating a simulator that checks whether a file system is working correctly or not. A file system is responsible for organizing and managing files on a computer, and it uses special information called metadata to keep track of everything. In this project, the simulator carefully studies this metadata to make sure that all files and directories are properly stored and connected.
+**📂 File System Consistency Checker (Simulator)
 
-The main goal of this system is to find common problems that can occur in a file system. For example, it can detect lost files (files that exist but are not linked to any directory), cross-linked blocks (where multiple files incorrectly share the same storage space), and incorrect directory entries (when folder information does not match the actual files). These types of errors can lead to data loss or system crashes if not fixed.
+📌 Overview
+**
+The File System Consistency Checker is a Python-based simulator that verifies the correctness of a file system by analyzing its metadata structures. It replicates how operating systems manage files, disk blocks, and directory entries, and ensures system reliability by detecting inconsistencies.
 
-To achieve this, the simulator copies the basic working of a real file system. It performs operations such as creating files, storing them, and checking their structure. At the same time, it runs different validation checks to ensure that everything is consistent and correct. If any problem is found, the system reports it clearly so that it can be fixed.
+🧠 Problem Statement
 
-This project is useful for learning how file systems actually work behind the scenes. It helps students and developers understand how operating systems maintain data integrity and prevent corruption. It also shows how errors can be detected and handled efficiently.
+File systems may become inconsistent due to system crashes, improper shutdowns, or bugs. These inconsistencies can lead to:
 
-Overall, this simulator acts as an educational tool that explains file system organization, error detection methods, and recovery techniques in a simple and practical way. It helps improve knowledge about operating system concepts and demonstrates the importance of keeping file systems reliable and error-free.
+Data loss
+Corrupted file structures
+Incorrect file references
+
+This project simulates a solution that identifies such issues using metadata verification techniques.
+
+🧩 Key Concepts Covered
+File System Structure
+Metadata Management
+Disk Block Allocation
+Directory Organization
+Consistency Checking
+🚀 Features
+📁 Simulates files, disk blocks, and directories
+🔍 Performs metadata-based consistency checks
+⚠️ Detects:
+Cross-linked blocks
+Lost files
+Invalid directory entries
+🧾 Generates a detailed error report
+💡 Simple and easy-to-understand Python implementation
+🛠️ Technologies Used
+Python 3
+⚙️ System Design
+📊 Components:
+Files Table → Stores file names and allocated blocks
+Block Map → Tracks which blocks are used
+Directory Structure → Maintains file references
+🔎 Types of Errors Detected
+1️⃣ Cross-Linked Blocks
+
+When a single disk block is shared by multiple files.
+
+2️⃣ Lost Files
+
+Files that exist in metadata but are not referenced in any directory.
+
+3️⃣ Invalid Directory Entries
+
+Directory entries pointing to non-existent files.
