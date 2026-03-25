@@ -1,8 +1,9 @@
 # Operating-System_project
-**📂 File System Consistency Checker (Simulator)
+📂 File System Consistency Checker (Simulator)
 
 📌 Overview
-**
+
+
 The File System Consistency Checker is a Python-based simulator that verifies the correctness of a file system by analyzing its metadata structures. It replicates how operating systems manage files, disk blocks, and directory entries, and ensures system reliability by detecting inconsistencies.
 
 🧠 Problem Statement
